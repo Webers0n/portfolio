@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* ==================== RESET E FONTE ==================== */
+* {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================== BODY ==================== */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: rgb(6, 214, 124);
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    flex: 1;
+}
+
+/* ==================== PARTICLES ==================== */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ==================== MENU ==================== */
+.menu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 2px solid rgb(5, 156, 91);
+    opacity: 0.8;
+    border-radius: 15px;
+    max-width: 40%;
+    margin: 20px auto;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: rgb(6, 214, 124);
+    transition: all 0.3s;
+    font-size: 1.2em;
+}
+
+.menu>a:hover {
+    color: #0aff22;
+    transform: scale(1.1);
+}
+.menu > a:active{
+    color: #04700f;
+}
+/* ==================== CONTAINER PRINCIPAL ==================== */
+.intro {
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    margin-top: 80px;
+    gap: 40px;
+    /* espaço entre imagem e texto */
+    flex-wrap: wrap;
+    /* quebra em mobile */
+    padding: 20px;
+}
+
+.intro >h2 {
+    opacity: 0.8;
+}
+.imagem>img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    border: 2px solid white;
+
+
+}
+
+.imagem>img:hover {
+    transform: scale(1.1);
+    
+}
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    /* mantém h1 e botão empilhados */
+    justify-content: center;
+    align-items: flex-start;
+    /* alinha à esquerda */
+    gap: 20px;
+}
+
+.container-2 h1 {
+    font-size: 2em;
+    opacity: 0.8;
+}
+
+.container-2 a {
+    font-size: 1.2em;
+    display: inline-block;
+    background-color: #949695;
+    color: rgb(22, 22, 22);
+    border-radius: 6px;
+    padding: 10px 30px;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.container-2 a:hover {
+    background: #0aff22;
+    border: 2px solid white;
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-2 {
+        align-items: center;
+    }
+}
+
+/* ==================== H2 ==================== */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    opacity: 0.7;
+}
+
+/* ==================== HABILIDADES ==================== */
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.habilidades a {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: rgb(141, 140, 140);
+    text-decoration: none;
+    box-shadow: rgba(30, 248, 2, 0.773) 0px 20px 55px,
+        rgb(238, 5, 5) 0px 4px 6px,
+        rgba(12, 98, 1, 0.932) 0px 12px 13px,
+        rgba(109, 0, 0, 0.636) 0px -3px 5px;
+    transition: all 0.3s;
+}
+
+.habilidades a:hover {
+    cursor: auto;
+    background: #0aff22;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* ==================== SOBRE ==================== */
+.sobre {
+    margin: 50px auto;
+    width: 90%;
+    text-align: left;
+}
+
+.sobre>h2 {
+    border-bottom: 2px solid white;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.sobre>p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    white-space: normal;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media screen and (max-width: 1024px) {
+    .container-2 h1 {
+        font-size: 1.8em;
+    }
+
+    .container-2>img {
+        max-width: 250px;
+    }
+
+    .sobre>p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .container-2 h1 {
+        font-size: 1.5em;
+    }
+
+    .container-2>a {
+        margin-top: 15px;
+    }
+
+    .sobre>p {
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-2 h1 {
+        font-size: 1.2em;
+    }
+
+    .container-2>img {
+        max-width: 200px;
+    }
+
+    .habilidades a {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    .sobre>p {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+.footer {
+
+    border-top: 2px solid rgb(5, 156, 91);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    gap: 20px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    /* joga tudo pro lado direito */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer>div {
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+    /* espaço entre os ícones */
+}
+
+.footer>div>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.9em;
+    color: rgb(6, 214, 124);
+    text-decoration: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.footer>div>a:hover {
+    background: #00ff99;
+    color: #000;
+    transform: scale(1.1);
+}

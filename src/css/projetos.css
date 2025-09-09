@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 60px;
+    color: rgb(6, 214, 124);
+
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    display: flex;
+    background-color: rgb(2, 109, 109);
+    border-radius: 16px;
+    opacity: 0.9;
+    flex-wrap: wrap;
+    color: black;
+    width: 340px;
+    height: 480px;
+    transition: 0.6s;
+    border: 2px solid white;
+}
+
+.card:hover {
+    box-shadow: rgba(27, 251, 2, 0.395) 0px 5px 55px, rgba(27, 251, 2, 0.581) 0px -12px 30px, rgba(2, 255, 44, 0.548) 0px 4px 6px, rgba(27, 251, 2, 0.647) 0px 12px 13px, rgba(27, 251, 2, 0.542) 0px -3px 5px;
+    transform: scale(1.1);
+}
+
+.card>img {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 100px;
+    height: 150px;
+}
+
+.titulo {
+    flex-wrap: wrap;
+    font-size: 1em;
+    margin: 10px;
+}
+.titulo > p{
+    font-size: 15px;
+}
+
+.tecnologia {
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1em;
+    color:  rgba(6, 241, 241, 0.671);
+    font-weight: bold;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.titulo>i {
+    font-size: 1.1em;
+
+}
+
+.container-btn {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 13px;
+}
+
+
+.container-btn > a {
+    margin-left: 3px;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid green;
+    background-color: rgb(1, 83, 83);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+    /* Transição apenas no que vai mudar */
+    transition: 0.4s ease, transform 0.2s ease;
+}
+
+.container-btn > a:hover {
+
+    background-color: rgb(5, 190, 190);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.container-btn > a:active{
+        background-color: rgb(3, 94, 94);
+
+}
+
+
+    .container-btn > a {
+    text-decoration: none;
+        font-size: 15px;
+    }
