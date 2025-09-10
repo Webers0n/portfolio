@@ -112,4 +112,31 @@
 .ling:hover {
     box-shadow: rgba(27, 251, 2, 0.395) 0px 5px 55px, rgba(27, 251, 2, 0.581) 0px -12px 30px, rgba(2, 255, 44, 0.548) 0px 4px 6px, rgba(27, 251, 2, 0.647) 0px 12px 13px, rgba(27, 251, 2, 0.542) 0px -3px 5px;
     transform: scale(1.1);
+
+}
+
+
+
+@media (max-width: 668px) {
+    .projeto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    .colunas{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .ling{
+        
+        padding: 6px;
+        width: auto;
+        height: auto;
+        
+        font-size: 15px;
+        
+    }
 }
