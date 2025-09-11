@@ -134,17 +134,6 @@ header {
     color: #ffffff;
 }
 
-/* Responsivo para telas pequenas */
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container-2 {
-        align-items: center;
-    }
-}
 
 /* ==================== H2 ==================== */
 h2 {
@@ -276,13 +265,13 @@ h2 {
         display:flex;
         flex-flow: nowrap;
         font-size: 17px;
-        margin-top: 18px;
+        margin-top: 22px;
         border: none;
         
     }
     .menu > a {
         font-size: 16px;
-        padding: 10px;
+        padding: 6px;
         border-radius: 8px;
         box-shadow: rgba(22, 180, 2, 0.411) 0px 20px 55px,
         rgb(238, 5, 5) 0px 4px 6px,
@@ -339,6 +328,7 @@ h2 {
     .links{
         display: flex;
         justify-content: center;
+        text-align: center;
         margin-right: auto;
     }
 }
