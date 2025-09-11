@@ -118,3 +118,10 @@ h2 {
     text-decoration: none;
         font-size: 15px;
     }
+
+@media (max-width:680px){
+    .container-projetos > h2 {
+        font-size: 35px;
+    }
+    
+}
