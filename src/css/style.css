@@ -304,9 +304,7 @@ h2 {
         font-size: 0.8em;
         
     }
-    .container-2 {
-        
-    }
+    
     .container-2 > h1{
         order: 2;
         font-size: 23px;
@@ -333,7 +331,7 @@ h2 {
     }
 
     .footer {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 }
 
