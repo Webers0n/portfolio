@@ -175,7 +175,7 @@ h2 {
     border-radius: 10px;
     color: rgb(141, 140, 140);
     text-decoration: none;
-    box-shadow: rgba(30, 248, 2, 0.773) 0px 20px 55px,
+    box-shadow: rgba(22, 180, 2, 0.411) 0px 20px 55px,
         rgb(238, 5, 5) 0px 4px 6px,
         rgba(12, 98, 1, 0.932) 0px 12px 13px,
         rgba(109, 0, 0, 0.636) 0px -3px 5px;
@@ -211,67 +211,8 @@ h2 {
     white-space: normal;
 }
 
-/* ==================== RESPONSIVIDADE ==================== */
-@media screen and (max-width: 1024px) {
-    .container-2 h1 {
-        font-size: 1.8em;
-    }
 
-    .container-2>img {
-        max-width: 250px;
-    }
 
-    .sobre>p {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container-2 {
-        flex-direction: column;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .container-2 h1 {
-        font-size: 1.5em;
-    }
-
-    .container-2>a {
-        margin-top: 15px;
-    }
-
-    .sobre>p {
-        font-size: 0.95em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container-2 h1 {
-        font-size: 1.2em;
-    }
-
-    .container-2>img {
-        max-width: 200px;
-    }
-
-    .habilidades a {
-        padding: 5px 10px;
-        font-size: 0.8em;
-    }
-
-    .sobre>p {
-        font-size: 0.9em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-}
 
 
 .footer {
@@ -324,3 +265,75 @@ h2 {
     color: #000;
     transform: scale(1.1);
 }
+
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+
+@media (max-width:680px){
+    /* =============== MENU =================*/
+    .menu {
+        display:flex;
+        flex-flow: nowrap;
+        font-size: 17px;
+        margin-top: 18px;
+        border: none;
+        
+    }
+    .menu > a {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: rgba(22, 180, 2, 0.411) 0px 20px 55px,
+        rgb(238, 5, 5) 0px 4px 6px,
+        rgba(12, 98, 1, 0.932) 0px 12px 13px,
+        rgba(109, 0, 0, 0.636) 0px -3px 5px;
+    }
+
+    /* =============== habilidades =================*/
+    .Pagina-inicial > h2{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .habilidades{
+        font-size: 14px;
+        
+    }
+    .habilidades a {
+        padding: 6px 6px;
+        font-size: 0.8em;
+        
+    }
+    .container-2 {
+        
+    }
+    .container-2 > h1{
+        order: 2;
+        font-size: 23px;
+    }
+    .container-2 > a{
+        order: 3;
+        font-size: 14px;
+    }
+    .sobre> p {
+        font-size: 3.9em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    .imagem{
+        order: -1;
+        max-width: 300px;
+        
+    }
+    .sobre>p {
+        font-size: 0.95em;
+    }
+
+    .footer {
+        margin-top: 60px;
+    }
+}
+
