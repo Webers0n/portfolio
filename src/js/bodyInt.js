@@ -9,7 +9,7 @@ particlesJS("particles-js", {
         "move": { "enable": true, "speed": 3, "direction": "none", "random": true, "straight": false }
     },
     "interactivity": {
-        "detect_on": "canvas",
+        "detect_on": "window",   // <<< aqui
         "events": {
             "onhover": { "enable": true, "mode": "grab" },
             "onclick": { "enable": true, "mode": "push" }
