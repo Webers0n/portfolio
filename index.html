@@ -4,274 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weberson Oliveira</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/sobre.css">
-    <link rel="stylesheet" href="src/css/projetos.css">
-    <link rel="stylesheet" href="src/css/contato.css">
+    <title>Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        body {
+            background-color: #0d0d0d;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
 
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffffaa;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
 
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 8px #00ffffaa;
+            }
 
+            to {
+                text-shadow: 0 0 20px #00ffff;
+            }
+        }
+
+        .menu {
+            background-color: rgba(30, 30, 30, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+        }
+
+        .menu a {
+            display: block;
+            background: linear-gradient(90deg, #00ffff, #0077ff);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            padding: 12px 0;
+            border-radius: 12px;
+            width: 80%;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .menu a:hover {
+            background: linear-gradient(90deg, #0077ff, #00ffff);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.9rem;
+            color: #888;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="particles-js" style="position:fixed; width:100%; height:100%; top:0; left:0; z-index:-1;"></div>
+    <div id="particles-js"></div>
+
     <header>
-
-        <div class="menu">
-            <a href="#" class="inicio">Inicio</a>
-            <a href="#" class="btnsobre">Sobre</a>
-            <a href="#" class="btnprojetos">Projetos</a>
-            <a href="#" class="btncontato">Contato</a>
-        </div>
-
-        <section>
-            <div class="Pagina-inicial" >
-
-
-                <div class="intro">
-
-                    <div class="container-2">
-                        <h1 class="coluna">Olá, Meu nome é <br><span>Weberson Oliveira</span></h1>
-                        <a href="src/docs/Currículo José Weberson.pdf" download="CV-Weberson-Oliveira.pdf"
-                            class="btn-cv">
-                            <i class="fas fa-download"></i> Baixar CV
-                        </a>
-                    </div>
-                    <div class="imagem">
-                        <img src="src/img/perfil.jpeg" alt="perfil">
-
-                    </div>
-                </div>
-
-                <h2>Habilidades</h2>
-                <div class="habilidades">
-
-                    <a href="#"><i class="fab fa-html5 fa-3x"></i> HTML</a>
-                    <a href="#"><i class="fab fa-css3-alt fa-3x"></i> CSS</a>
-                    <a href="#"><i class="fab fa-js-square fa-3x"></i> JavaScript</a>
-                    <a href="#"><i class="fab fa-php fa-3x"></i> PHP</a>
-                    <a href="#"><i class="fab fa-node-js fa-3x"></i> NodeJs</a>
-                    <a href="#"><i class="fab fa-python fa-3x"></i> Python</a>
-                    <a href="#"><i class="fas fa-code fa-3x"></i> C</a>
-                    <a href="#"><i class="fab fa-java fa-3x"></i> Java</a>
-                    <a href="#"><i class="fas fa-database fa-3x"></i> MySQL</a>
-                    <a href="#"><i class="fab fa-bootstrap fa-3x"></i> Bootstrap</a>
-
-                </div>
-
-            </div>
-
-            <div class="sobre" style="display: none;">
-                <div class="containerSobre">
-                    <h1>Sobre</h1>
-
-                    <h3>Sou desenvolvedor Desktop, com experiência prática em front-end (HTML, CSS, JavaScript) e
-                        programação em (Python, Java,C , PHP ). Atualmente ampliando habilidades em Node.js para
-                        construir
-                        integrações e serviços de backend. Tenho experiência também no desenvolvimento de sites,
-                        aplicativos
-                        e ferramentas desktop — sempre priorizando código legível, testes básicos e soluções que
-                        facilitem a
-                        manutenção. Sou organizado, gosto de resolver problemas de forma pragmática e colaborar com
-                        times
-                        multidisciplinares para transformar requisitos em entregas concretas. Procuro oportunidades para
-                        aplicar minhas habilidades em projetos reais e continuar evoluindo como desenvolvedor
-                        web/full-stack.</h3>
-
-                </div>
-                <div class="h2sobre">
-                    <h2>Minhas Habilidades & Ferramentas</h2>
-                </div>
-                <div class="colunas">
-                    <div class="ling">
-                        <h3>Linguagens de Programação</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-javascript-plain colored">JavaScript</i>
-                                <i class="devicon-nodejs-plain colored">NodeJS</i>
-                                <i class="devicon-python-plain 
-                        colored">Python</i>
-                            </div>
-                            <div class="lista">
-                                <i class="devicon-java-plain colored">Java</i>
-                                <i class="devicon-php-plain colored">PHP</i>
-                                <i class="devicon-react-original colored">React</i>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="ling">
-                        <h3>Frameworks & Bibliotecas Web</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-react-original colored" title="React">React</i>
-                                <i class="devicon-vuejs-plain colored" title="Vue.js">Vue.js</i>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div class="ling">
-                        <h3>Bancos de Dados & ORMs</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-mysql-plain colored" title="MySQL">MySQL</i>
-                                <i class="devicon-postgresql-plain colored" title="PostgreSQL">PostgreSQL</i>
-                                <i class="devicon-mongodb-plain colored" title="MongoDB">MongoDB</i>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="ling">
-                        <h3>Controle de Versão & Colaboração</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-git-plain colored" title="Git">Git</i>
-                                <!-- GitHub -->
-                                <i class="devicon-github-original" title="GitHub">GitHub</i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ling">
-                        <h3>IDEs & Editores de Código</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-visualstudio-plain colored">Visual Studio Code</i>
-                                <i class="devicon-intellij-plain colored">IntelliJ IDEA</i>
-                                <i class="devicon-eclipse-plain colored">Eclipse</i>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="ling">
-                        <h3>Sistemas Operacionais & Ambiente</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-windows8-original colored">Windows</i>
-                                <i class="devicon-linux-plain colored">Linux</i>
-                                <i class="devicon-ubuntu-plain colored">Ubuntu</i>
-                                <i class="devicon-debian-plain colored">Debian</i>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="ling">
-                        <h3>Outras Ferramentas</h3>
-                        <div class="incon">
-                            <div class="lista">
-                                <i class="devicon-docker-plain colored">Docker</i>
-                                <i class="devicon-npm-original-wordmark colored">NPM</i>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            </div>
-
-            <div class="container-projetos" style="display: none;">
-                <h2>Meus Projetos</h2>
-                <div class="projetos">
-
-                    <div class="card">
-                        <img src="src/img/painel.jpg" alt="">
-                        <div class="titulo">
-                            <h3>SEG-REF</h3>
-                            <p>
-                                O projeto foi desenvolvido no intuito para ajudar nos servições em campos ao execurtar
-                                trabalhos
-                                na area da refrigeração é climatização.
-                            </p>
-                            <p class="tecnologia">Tecnologias:</p>
-                            <i class="devicon-javascript-plain colored">JavaScript</i>
-                            <i class="devicon-nodejs-plain colored">NodeJS</i>
-                            <i class="devicon-python-plain 
-                        colored">Python</i>
-                            <i class="devicon-react-original colored">React</i>
-
-                        </div>
-                        <div class="container-btn">
-                            <a class="btn" href="#">GitHub</a>
-                            <a class="btn" href="#">Ver Site</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="src/img/controle-kaban.png" alt="">
-                        <div class="titulo">
-                            <h3>Kaban</h3>
-                            <p>
-                                Projeto de quadro Kanban simples desenvolvido com HTML, CSS e JavaScript puro, com foco
-                                em
-                                boas práticas de estruturação, manipulação do DOM e uso de localStorage.
-                            </p>
-                            <p class="tecnologia">Tecnologias:</p>
-                            <i class="devicon-html5-plain colored">HTML5</i>
-                            <i class="devicon-css3-plain colored">CSS3</i>
-                            <i class="devicon-javascript-plain colored">JavaScript</i>
-
-
-                        </div>
-                        <div class="container-btn">
-                            <a href="https://github.com/Webers0n/kanban-task-board.git">GitHub</a>
-                            <a href="#">Ver Site</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contato" style="display: none;">
-                <h2>📞 Informações de Contato</h2>
-                <p><strong>Telefone:</strong> <a href="tel:+5587999665798">+55 (87) 99966-5798</a></p>
-                <p><strong>Email:</strong> <a href="mailto:tif2017@gmail.com">tif2017@gmail.com</a></p>
-
-                <h2>✉️ Enviar Mensagem</h2>
-                <form action="mailto:contato@exemplo.com" method="post" enctype="text/plain">
-                    <input type="text" name="nome" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu email" required>
-                    <textarea name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-
-        </section>
-
+        <h1>Bem-vindo</h1>
     </header>
 
-    <footer class="footer">
-        © 2025 Weberson Oliveira
-        <div class="links">
-            <a href="https://wa.me/5587999665798" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://github.com/Webers0n">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-weberson/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
+    <div class="menu">
+        <a href="src/pages/portfolio.html">Portfólio</a>
+        <a href="https://github.com/Webers0n">GitHub</a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-weberson/">LinkedIn</a>
+        <a href="https://wa.me/5587999665798">Contato</a>
+        <a href="src/docs/Currículo José Weberson.pdf">Baixar CV</a>
+    </div>
 
-        </div>
+    <footer>
+        <p>© 2025 Weberson Oliveira</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="src/js/bodyInt.js"></script>
-    <script src="src/js/index.js"></script>
 </body>
 
 </html>

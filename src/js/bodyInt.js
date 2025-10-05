@@ -5,7 +5,7 @@ particlesJS("particles-js", {
         "shape": { "type": "circle" },
         "opacity": { "value": 0.5 },
         "size": { "value": 3 },
-        "line_linked": { "enable": true, "distance": 150, "color": "#0aff22", "opacity": 0.4, "width": 1 },
+        "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.4, "width": 1 },
         "move": { "enable": true, "speed": 3, "direction": "none", "random": true, "straight": false }
     },
     "interactivity": {
