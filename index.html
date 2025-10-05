@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -53,7 +55,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 320px;
+            width: 350px;
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
         }
 
@@ -62,11 +64,11 @@
             background: linear-gradient(90deg, #00ffff, #0077ff);
             color: #fff;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin: 10px 0;
             padding: 12px 0;
             border-radius: 12px;
-            width: 80%;
+            width: 70%;
             text-align: center;
             transition: all 0.3s ease;
             font-weight: 500;
@@ -77,6 +79,40 @@
             transform: scale(1.05);
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
         }
+
+        .menu a i {
+            margin-right: 10px;
+            font-size: 1.8rem;
+            vertical-align: middle;
+        }
+
+        .menu a:nth-child(1) i {
+            color: #ffb700;
+        }
+
+        /* Portfólio - dourado */
+        .menu a:nth-child(2) i {
+            color: #fff;
+        }
+
+        /* GitHub - branco */
+        .menu a:nth-child(3) i {
+            color: #0a66c2;
+        }
+
+        /* LinkedIn - azul */
+        .menu a:nth-child(4) i {
+            color: #036f2b;
+        }
+
+        /* WhatsApp - verde */
+        .menu a:nth-child(5) i {
+            color: #ff0066;
+        }
+
+        /* CV - rosa */
+
+
 
         #particles-js {
             position: fixed;
@@ -94,6 +130,7 @@
             color: #888;
             text-align: center;
         }
+
     </style>
 </head>
 
@@ -105,12 +142,14 @@
     </header>
 
     <div class="menu">
-        <a href="src/pages/portfolio.html">Portfólio</a>
-        <a href="https://github.com/Webers0n">GitHub</a>
-        <a href="https://www.linkedin.com/in/jos%C3%A9-weberson/">LinkedIn</a>
-        <a href="https://wa.me/5587999665798">Contato</a>
-        <a href="src/docs/Currículo José Weberson.pdf">Baixar CV</a>
+        
+        <a href="src/pages/portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfólio</a>
+        <a href="https://github.com/Webers0n"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-weberson/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://wa.me/5587999665798"><i class="fa-brands fa-whatsapp"></i> Contato</a>
+        <a href="src/docs/Currículo José Weberson.pdf"><i class="fa-solid fa-file-arrow-down"></i> Baixar CV</a>
     </div>
+
 
     <footer>
         <p>© 2025 Weberson Oliveira</p>
