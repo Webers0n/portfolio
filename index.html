@@ -65,10 +65,10 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.3rem;
-            margin: 10px 0;
-            padding: 12px 0;
+            margin: 8px 0;
+            padding: 10px 0;
             border-radius: 12px;
-            width: 70%;
+            width: 80%;
             text-align: center;
             transition: all 0.3s ease;
             font-weight: 500;
@@ -123,6 +123,25 @@
             z-index: -1;
         }
 
+        .foto1{
+            width: 40%;
+            height: 40%;
+            border-radius: 100%;
+        }
+        .menu > div {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .menu > h3{
+            font-size: 1.4em;
+        }
+        .menu > p{
+            font-size: 0.8em;
+            margin-bottom: 4%;
+        }
+
         footer {
             position: absolute;
             bottom: 15px;
@@ -131,7 +150,9 @@
             text-align: center;
         }
 
+        
     </style>
+
 </head>
 
 <body>
@@ -141,13 +162,20 @@
         <h1>Bem-vindo</h1>
     </header>
 
-    <div class="menu">
+    <div >
         
-        <a href="src/pages/portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfólio</a>
-        <a href="https://github.com/Webers0n"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/jos%C3%A9-weberson/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        <a href="https://wa.me/5587999665798"><i class="fa-brands fa-whatsapp"></i> Contato</a>
-        <a href="src/docs/Currículo José Weberson.pdf"><i class="fa-solid fa-file-arrow-down"></i> Baixar CV</a>
+        <nav class="menu">
+            <div>
+                <img class="foto1"src="src/img/perfil.jpeg" alt="">
+            </div>
+            <h3>Weberson Oliveira</h3>
+            <p>Desenvolvedor</p>
+            <a href="src/pages/portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfólio</a>
+            <a href="https://github.com/Webers0n"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-weberson/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://wa.me/5587999665798"><i class="fa-brands fa-whatsapp"></i> Contato</a>
+            <a href="src/docs/Currículo José Weberson.pdf"><i class="fa-solid fa-file-arrow-down"></i> Baixar CV</a>
+        </nav>
     </div>
 
 
