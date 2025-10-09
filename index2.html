@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+</head>
+
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    .container{
+        width: 50%;
+        border-radius: 10px;
+        background-color: rgb(167, 167, 167);
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+    .container > h3{
+        font-size: 1.5em;
+    }
+    .container > img{
+        width:40%;
+        height: 40%;
+        border-radius: 70%;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        margin: 0 auto;
+        align-items: center;
+        margin: 10px;
+    }
+    .menu >a {
+        height: auto;
+        width: 50%;
+        border-radius: 6px;
+        background-color: brown;
+        padding: 20px;
+        margin:5px;
+        text-decoration: none;
+        color: aliceblue;
+    }
+    footer{
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="container">
+            <img src="src/img/perfil.jpeg" alt="">
+            <h3>Weberson Oliveira</h3>
+            <span for="">Designer Gráfico</span>
+            <nav class="menu">
+                <a href="">Meus templates</a>
+                <a href="">Portfólio</a>
+                <a href="">Chama no Zap</a>
+                <a href="">Orçamentos</a>
+            </nav>
+        </div>
+    </header>
+
+    <footer>
+        <span>@WebersonOliveira</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="src/js/bodyInt.js"></script>
+</body>
+
+</html>
